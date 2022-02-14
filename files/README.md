@@ -1,7 +1,3 @@
-# Python
-
-## files with python
-
 #### file access modes
 
 - `r`   : needs to exist or shows error
