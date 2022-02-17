@@ -89,3 +89,17 @@ file.write('julie\n')
 file.close()
 ```
 <br>
+
+#### context manager
+
+example
+```python
+# test.txt has a word - file
+with open('test.txt', 'r') as f:
+  name = f.read()
+  # create file1 - file10
+  for i in range(1, 11):
+    with open(f'{name}{i}.txt', 'w', encoding='utf-8') as file:
+      # write 1 to file1...10 to file10
+      file.write(f'{i}')
+```
